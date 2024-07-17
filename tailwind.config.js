@@ -2,7 +2,24 @@
 module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
-    extend: {},
+    extend: {
+      colors: {
+        lightMode: {
+          text: "#150a04",
+          background: "#fdf9f7",
+          primary: "#d66829",
+          secondary: "#87e892",
+          accent: "#55ddab",
+        },
+        darkMode: {
+          text: "#150a04",
+          background: "#fdf9f7",
+          primary: "#d66829",
+          secondary: "#87e892",
+          accent: "#55ddab",
+        },
+      },
+    },
   },
   plugins: ["prettier-plugin-tailwindcss"],
 };
