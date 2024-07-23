@@ -1,5 +1,5 @@
 {
-  "name": "askari-management",
+  "name": "security-management-app",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -7,7 +7,7 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "serve:ssr:askari-management": "node dist/askari-management/server/server.mjs"
+    "serve:ssr:security-management-app": "node dist/security-management-app/server/server.mjs"
   },
   "private": true,
   "dependencies": {
