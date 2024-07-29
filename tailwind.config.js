@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "media",
   content: ["./src/**/*.{html,ts}"],
   theme: {
     extend: {
@@ -8,18 +9,18 @@ module.exports = {
       },
       colors: {
         lightMode: {
-          text: "#150a04",
-          background: "#fdf9f7",
-          primary: "#d66829",
-          secondary: "#87e892",
-          accent: "#55ddab",
+          text: "#012820",
+          background: "#f0fffb",
+          primary: "#0ffad3",
+          secondary: "#fd8188",
+          accent: "#fbeb3c",
         },
         darkMode: {
-          text: "#150a04",
-          background: "#fdf9f7",
-          primary: "#d66829",
-          secondary: "#87e892",
-          accent: "#55ddab",
+          text: "d7fef6",
+          background: "#000f0b",
+          primary: "#05f0c9",
+          secondary: "#7e0208",
+          accent: "#c3b304",
         },
       },
     },
