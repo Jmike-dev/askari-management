@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{html,ts}"],
   theme: {
     extend: {
+      fontFamily: {
+        spartan: "'League Spartan', sans-serif",
+      },
       colors: {
         lightMode: {
           text: "#150a04",
