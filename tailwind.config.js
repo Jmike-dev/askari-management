@@ -16,7 +16,7 @@ module.exports = {
           accent: "#fbeb3c",
         },
         darkMode: {
-          text: "d7fef6",
+          text: "#d7fef6",
           background: "#000f0b",
           primary: "#05f0c9",
           secondary: "#7e0208",
