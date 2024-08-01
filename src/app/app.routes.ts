@@ -11,4 +11,5 @@ export const routes: Routes = [
     { path: 'loginPage', component: LoginPageComponent },
     { path: 'SignPage', component: SignUpPageComponent },
     { path: 'DashboardPage', component: DashboardPagesComponent },
+    { path: '', redirectTo: 'homePage', pathMatch: 'full' },
 ];
