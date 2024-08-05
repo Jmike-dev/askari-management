@@ -1,47 +1,58 @@
-<div class="bg-lightMode-background dark:bg-darkMode-background">
-    <div
-        class="text-bold flex justify-center gap-4 rounded-md p-2 font-spartan text-2xl text-lightMode-text md:text-3xl dark:text-darkMode-text"
-    >
-        <a
-            routerLink="/homePage"
-            class="group relative hidden items-center justify-start overflow-hidden rounded-xl py-3 pl-4 pr-12 font-semibold transition-all duration-150 ease-in-out hover:pl-10 hover:pr-6 md:inline-flex"
-        >
-            <span
-                class="absolute bottom-0 left-0 h-1 w-full transition-all duration-150 ease-in-out group-hover:h-full"
-            ></span>
+<div class="bg-lightMode-background">
+    <div class="hidden sm:contents">
+        <div class="flex">
+            <div
+                class="text-bold flex w-3/4 justify-center gap-28 p-4 font-spartan text-2xl text-lightMode-text md:text-3xl"
+            >
+                <a
+                    routerLink="/homePage"
+                    class="group relative hidden items-center justify-start overflow-hidden rounded-xl py-3 pl-4 pr-12 font-semibold transition-all duration-150 ease-in-out hover:pl-10 hover:pr-6 md:inline-flex"
+                >
+                    <span
+                        class="absolute bottom-0 left-0 h-1 w-full transition-all duration-150 ease-in-out group-hover:h-full"
+                    ></span>
 
-            <span
-                class="absolute left-0 -translate-x-12 pl-2.5 duration-200 ease-out group-hover:translate-x-0"
-            >
-            </span>
-            <span
-                class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-lightMode-accent"
-                >Home</span
-            >
-        </a>
+                    <span
+                        class="absolute left-0 -translate-x-12 pl-2.5 duration-200 ease-out group-hover:translate-x-0"
+                    >
+                    </span>
+                    <span
+                        class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-darkMode-accent"
+                        >Home</span
+                    >
+                </a>
 
-        <a
-            routerLink="/aboutPage"
-            class="text-text group relative hidden items-center justify-start overflow-hidden rounded-xl py-3 pl-4 pr-12 font-semibold transition-all duration-150 ease-in-out hover:pl-10 hover:pr-6 md:inline-flex"
-        >
-            <span
-                class="bg-primary-Fuchsia absolute bottom-0 left-0 h-1 w-full transition-all duration-150 ease-in-out group-hover:h-full"
-            ></span>
+                <a
+                    routerLink="/aboutPage"
+                    class="text-text group relative hidden items-center justify-start overflow-hidden rounded-xl py-3 pl-4 pr-12 font-semibold transition-all duration-150 ease-in-out hover:pl-10 hover:pr-6 md:inline-flex"
+                >
+                    <span
+                        class="bg-primary-Fuchsia absolute bottom-0 left-0 h-1 w-full transition-all duration-150 ease-in-out group-hover:h-full"
+                    ></span>
 
-            <span
-                class="absolute left-0 -translate-x-12 pl-2.5 duration-200 ease-out group-hover:translate-x-0"
-            >
-            </span>
-            <span
-                class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-lightMode-accent"
-                >About</span
-            >
-        </a>
-        <!-- <app-button [buttonText]="buttonText" (buttonFunction)="loginPage()"/> -->
+                    <span
+                        class="absolute left-0 -translate-x-12 pl-2.5 duration-200 ease-out group-hover:translate-x-0"
+                    >
+                    </span>
+                    <span
+                        class="relative w-full text-left transition-colors duration-200 ease-in-out group-hover:text-darkMode-accent"
+                        >About</span
+                    >
+                </a>
+            </div>
+            <div class="w-1/4 p-8">
+                <a
+                    routerLink="/loginPage"
+                    class="whitespace-no-wrap mx-20 my-auto flex items-center justify-center rounded-full border-2 border-transparent bg-lightMode-primary px-4 py-2 text-2xl font-medium leading-6 text-lightMode-text shadow-sm hover:border-lightMode-accent hover:bg-darkMode-accent focus:outline-none "
+                >
+                    Login
+                </a>
+            </div>
+        </div>
     </div>
     <div class="flex md:hidden">
         <div
-            class="mt-6 w-1/2 text-left font-spartan text-4xl font-semibold text-lightMode-text dark:text-darkMode-text"
+            class="mt-6 w-1/2 text-left font-spartan text-4xl font-semibold text-lightMode-text"
         >
             <a routerLink="/homePage" class="p-4"> Recipes </a>
         </div>
@@ -49,10 +60,9 @@
         <div class="w-1/4 content-center justify-center">
             <button
                 [matMenuTriggerFor]="beforeMenu"
-                class="content-center rounded-xl bg-darkMode-background px-2 py-2 text-center dark:bg-lightMode-background"
+                class="content-center rounded-xl bg-darkMode-background px-2 py-2 text-center"
             >
-                <mat-icon
-                    class="py-1 text-lightMode-background dark:text-darkMode-background"
+                <mat-icon class="py-1 text-lightMode-background"
                     >more_vert</mat-icon
                 >
             </button>
