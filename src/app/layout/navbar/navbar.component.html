@@ -2,7 +2,7 @@
     <div class="hidden sm:contents">
         <div class="flex">
             <div
-                class="text-bold flex w-3/4 justify-center gap-28 p-4 font-spartan text-2xl text-lightMode-text md:text-3xl"
+                class="flex w-3/4 justify-center gap-28 p-4 font-spartan text-2xl text-lightMode-text md:text-3xl"
             >
                 <a
                     routerLink="/homePage"
@@ -43,16 +43,16 @@
             <div class="w-1/4 p-8">
                 <a
                     routerLink="/loginPage"
-                    class="whitespace-no-wrap mx-20 my-auto flex items-center justify-center rounded-full border-2 border-transparent bg-lightMode-primary px-4 py-2 text-2xl font-medium leading-6 text-lightMode-text shadow-sm hover:border-lightMode-accent hover:bg-darkMode-accent focus:outline-none "
+                    class="whitespace-no-wrap mx-20 my-auto flex items-center justify-center rounded-full border-2 border-transparent bg-lightMode-primary px-4 py-2 text-2xl font-medium leading-6 text-lightMode-text shadow-sm hover:border-lightMode-accent hover:bg-darkMode-accent hover:text-darkMode-text focus:outline-none"
                 >
                     Login
                 </a>
             </div>
         </div>
     </div>
-    <div class="flex md:hidden">
+    <div class="flex p-4 md:hidden">
         <div
-            class="mt-6 w-1/2 text-left font-spartan text-4xl font-semibold text-lightMode-text"
+            class="mt-4 w-1/2 text-left font-spartan text-4xl font-semibold text-lightMode-text"
         >
             <a routerLink="/homePage" class="p-4"> Recipes </a>
         </div>
@@ -60,15 +60,14 @@
         <div class="w-1/4 content-center justify-center">
             <button
                 [matMenuTriggerFor]="beforeMenu"
-                class="content-center rounded-xl bg-darkMode-background px-2 py-2 text-center"
+                class="content-center rounded-xl bg-lightMode-primary px-8 py-4 text-center"
             >
-                <mat-icon class="py-1 text-lightMode-background"
-                    >more_vert</mat-icon
-                >
+                <mat-icon class="py-1 text-lightMode-text">more_vert</mat-icon>
             </button>
+
             <mat-menu #beforeMenu="matMenu" xPosition="before">
-                <a mat-menu-item routerLink="/homePage">Home</a>
-                <a mat-menu-item routerLink="/aboutPage">About</a>
+                <a mat-menu-item routerLink="/homePage"> Home</a>
+                <a mat-menu-item routerLink="/aboutPage"> About</a>
             </mat-menu>
         </div>
     </div>
